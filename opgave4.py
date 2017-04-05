@@ -16,4 +16,4 @@ for year in [1992, 2000, 2015]:
 
 max_1992, max_2000, max_2015 = [max(year_dist.get(y).items(), key=operator.itemgetter(1))[0] for y in [1992, 2000, 2015]]
 
-print(max_1992, max_2000)
+print(max_1992, max_2000, max_2015)
