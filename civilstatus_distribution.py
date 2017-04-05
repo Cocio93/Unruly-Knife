@@ -23,13 +23,18 @@ for title, data_dict in distribution.items():
     x = list(data_dict.keys())
     y = list(data_dict.values())
     plt.figure()
-    plt.bar(index, y, bar_width,
+    bar = plt.bar(index, y, bar_width,
                  alpha=0.8,
                  color='b',
                  yerr=x,
-                 error_kw= {'ecolor': '0.3'},
                  label=title)
     plt.title(title)
+
+
+
+
+
+
 
 plt.legend()
 plt.tight_layout()
